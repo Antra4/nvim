@@ -9,6 +9,7 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
+			vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
 		end
 	},
 	{
